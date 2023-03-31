@@ -1,6 +1,7 @@
 # -*- coding:utf-8 -*-
 import streamlit as st
 from eda_app import run_eda_app
+from ml_app import run_ml_app
 
 def main():
     
@@ -13,7 +14,7 @@ def main():
     elif choice == "탐색적 자료분석":
         run_eda_app()
     elif choice == "머신러닝":
-        pass
+        run_ml_app()
     else:
         st.subheader("About")
 
