@@ -25,7 +25,7 @@ def run_ml_app():
         st.subheader("모델 결과를 확인해주세요")
 
         # 모델 불러오기
-        model_file = "models\lgr_model_iris230331.pkl"
+        model_file = "models/lgr_model_iris230331.pkl"
         loaded_model = joblib.load(open(os.path.join(model_file), "rb"))
         st.write(loaded_model)
 
